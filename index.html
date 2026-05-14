@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +12,8 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:Arial;
+font-family:Arial, sans-serif;
+scroll-behavior:smooth;
 }
 
 body{
@@ -21,7 +23,7 @@ color:#111;
 
 nav{
 background:#000;
-padding:20px;
+padding:20px 60px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -33,53 +35,63 @@ z-index:1000;
 
 nav h1{
 color:#d4af37;
-font-size:32px;
+font-size:34px;
+font-weight:bold;
 }
 
-nav a{
+nav .links a{
 color:white;
 text-decoration:none;
-margin-left:20px;
+margin-left:25px;
+font-size:18px;
+transition:0.3s;
+}
+
+nav .links a:hover{
+color:#d4af37;
 }
 
 .hero{
 height:100vh;
-background:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');
+background:url('makrana white.jpeg');
 background-size:cover;
 background-position:center;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 }
 
 .overlay{
-background:rgba(0,0,0,0.7);
+background:rgba(0,0,0,0.75);
 width:100%;
 height:100%;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
+padding:20px;
 }
 
 .hero-content{
 color:white;
-padding:20px;
+max-width:900px;
 }
 
 .hero-content h2{
 color:#d4af37;
 font-size:28px;
+margin-bottom:20px;
 }
 
 .hero-content h1{
-font-size:70px;
-margin-top:20px;
+font-size:80px;
+line-height:1.1;
 }
 
 .hero-content p{
-margin-top:20px;
-font-size:20px;
+margin-top:25px;
+font-size:22px;
+line-height:1.6;
 }
 
 .btns{
@@ -87,48 +99,69 @@ margin-top:40px;
 }
 
 .btn{
-padding:15px 35px;
+display:inline-block;
+padding:16px 40px;
 background:#d4af37;
 color:white;
 text-decoration:none;
-border-radius:10px;
+border-radius:12px;
 margin:10px;
-display:inline-block;
+font-size:18px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#b8922e;
+transform:scale(1.05);
 }
 
 .section{
-padding:100px 20px;
+padding:110px 60px;
 text-align:center;
 }
 
 .section h2{
-font-size:50px;
-margin-bottom:30px;
+font-size:55px;
+margin-bottom:25px;
+}
+
+.section p{
+font-size:20px;
+line-height:1.8;
+max-width:1000px;
+margin:auto;
 }
 
 .products{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:30px;
-margin-top:50px;
+gap:35px;
+margin-top:60px;
 }
 
 .card{
-box-shadow:0 5px 20px rgba(0,0,0,0.2);
 border-radius:20px;
 overflow:hidden;
+box-shadow:0 5px 25px rgba(0,0,0,0.2);
+transition:0.4s;
+background:white;
+}
+
+.card:hover{
+transform:translateY(-10px);
 }
 
 .card img{
 width:100%;
-height:250px;
+height:320px;
 object-fit:cover;
 }
 
 .card h3{
-padding:20px;
 background:#000;
 color:white;
+padding:20px;
+font-size:28px;
 }
 
 .contact{
@@ -136,11 +169,46 @@ background:#111;
 color:white;
 }
 
+.contact p{
+margin-top:20px;
+}
+
 footer{
 background:#000;
 color:white;
 text-align:center;
-padding:30px;
+padding:40px;
+}
+
+footer h2{
+color:#d4af37;
+margin-bottom:10px;
+font-size:35px;
+}
+
+@media(max-width:768px){
+
+nav{
+padding:20px;
+flex-direction:column;
+}
+
+nav .links{
+margin-top:15px;
+}
+
+.hero-content h1{
+font-size:45px;
+}
+
+.section{
+padding:90px 20px;
+}
+
+.section h2{
+font-size:40px;
+}
+
 }
 
 </style>
@@ -153,7 +221,7 @@ padding:30px;
 
 <h1>KHUSH MARBLES</h1>
 
-<div>
+<div class="links">
 <a href="#home">Home</a>
 <a href="#about">About</a>
 <a href="#products">Products</a>
@@ -168,12 +236,13 @@ padding:30px;
 
 <div class="hero-content">
 
-<h2>PREMIUM QUALITY</h2>
+<h2>PREMIUM QUALITY MARBLE & GRANITE</h2>
 
-<h1>MARBLE & GRANITE</h1>
+<h1>TIMELESS BEAUTY IN EVERY STONE</h1>
 
 <p>
-Luxury Marble & Granite Supplier in Kishangarh
+Luxury Marble & Granite Supplier in Kishangarh Rajasthan
+providing premium stones for homes, hotels, interiors and commercial projects.
 </p>
 
 <div class="btns">
@@ -199,8 +268,9 @@ WhatsApp
 <h2>About Us</h2>
 
 <p>
-Khush Marbles is a premium marble and granite company based in Kishangarh Rajasthan.
-We deal in Makrana White Marble, Amba White Marble, Red Granite, Black Granite and Blue Granite.
+Khush Marbles is a trusted marble and granite company based in Kishangarh Rajasthan.
+We specialize in premium quality Makrana White Marble, Amba White Marble,
+Black Granite, Blue Granite and many more luxurious stone collections.
 </p>
 
 </section>
@@ -212,28 +282,28 @@ We deal in Makrana White Marble, Amba White Marble, Red Granite, Black Granite a
 <div class="products">
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="makrana white.jpeg">
 <h3>Makrana White Marble</h3>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1494526585095-c41746248156">
+<img src="amba white.jpg">
 <h3>Amba White Marble</h3>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f">
-<h3>Red Granite</h3>
-</div>
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+<img src="black.jpg">
 <h3>Black Granite</h3>
 </div>
 
 <div class="card">
-<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<img src="blue.jpg">
 <h3>Blue Granite</h3>
+</div>
+
+<div class="card">
+<img src="white.jpg">
+<h3>Premium White Granite</h3>
 </div>
 
 </div>
@@ -244,9 +314,19 @@ We deal in Makrana White Marble, Amba White Marble, Red Granite, Black Granite a
 
 <h2>Contact Us</h2>
 
-<p>Phone: 7897454514</p>
-<p>Email: khushmarbles@gmail.com</p>
-<p>Rajamarg, Jamna Nagar, Kishangarh, Rajasthan - 302001</p>
+<p><b>Phone:</b> 7897454514</p>
+<p><b>Email:</b> khushmarbles@gmail.com</p>
+<p><b>Address:</b> Rajamarg, Jamna Nagar, Kishangarh, Rajasthan - 302001</p>
+
+<br><br>
+
+<a href="tel:7897454514" class="btn">
+Call Now
+</a>
+
+<a href="https://wa.me/917897454514" class="btn">
+WhatsApp
+</a>
 
 </section>
 
