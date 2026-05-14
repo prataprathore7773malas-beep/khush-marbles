@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khush Marbles</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial;
+}
+
+body{
+background:#fff;
+color:#111;
+}
+
+nav{
+background:#000;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:fixed;
+width:100%;
+top:0;
+z-index:1000;
+}
+
+nav h1{
+color:#d4af37;
+font-size:32px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+}
+
+.hero{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+}
+
+.overlay{
+background:rgba(0,0,0,0.7);
+width:100%;
+height:100%;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.hero-content{
+color:white;
+padding:20px;
+}
+
+.hero-content h2{
+color:#d4af37;
+font-size:28px;
+}
+
+.hero-content h1{
+font-size:70px;
+margin-top:20px;
+}
+
+.hero-content p{
+margin-top:20px;
+font-size:20px;
+}
+
+.btns{
+margin-top:40px;
+}
+
+.btn{
+padding:15px 35px;
+background:#d4af37;
+color:white;
+text-decoration:none;
+border-radius:10px;
+margin:10px;
+display:inline-block;
+}
+
+.section{
+padding:100px 20px;
+text-align:center;
+}
+
+.section h2{
+font-size:50px;
+margin-bottom:30px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.card{
+box-shadow:0 5px 20px rgba(0,0,0,0.2);
+border-radius:20px;
+overflow:hidden;
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card h3{
+padding:20px;
+background:#000;
+color:white;
+}
+
+.contact{
+background:#111;
+color:white;
+}
+
+footer{
+background:#000;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+
+<h1>KHUSH MARBLES</h1>
+
+<div>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#products">Products</a>
+<a href="#contact">Contact</a>
+</div>
+
+</nav>
+
+<section class="hero" id="home">
+
+<div class="overlay">
+
+<div class="hero-content">
+
+<h2>PREMIUM QUALITY</h2>
+
+<h1>MARBLE & GRANITE</h1>
+
+<p>
+Luxury Marble & Granite Supplier in Kishangarh
+</p>
+
+<div class="btns">
+
+<a href="tel:7897454514" class="btn">
+Call Now
+</a>
+
+<a href="https://wa.me/917897454514" class="btn">
+WhatsApp
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="about">
+
+<h2>About Us</h2>
+
+<p>
+Khush Marbles is a premium marble and granite company based in Kishangarh Rajasthan.
+We deal in Makrana White Marble, Amba White Marble, Red Granite, Black Granite and Blue Granite.
+</p>
+
+</section>
+
+<section class="section" id="products">
+
+<h2>Our Collection</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<h3>Makrana White Marble</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1494526585095-c41746248156">
+<h3>Amba White Marble</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f">
+<h3>Red Granite</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858">
+<h3>Black Granite</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85">
+<h3>Blue Granite</h3>
+</div>
+
+</div>
+
+</section>
+
+<section class="section contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Phone: 7897454514</p>
+<p>Email: khushmarbles@gmail.com</p>
+<p>Rajamarg, Jamna Nagar, Kishangarh, Rajasthan - 302001</p>
+
+</section>
+
+<footer>
+
+<h2>KHUSH MARBLES</h2>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
+</footer>
+
+</body>
+</html>
